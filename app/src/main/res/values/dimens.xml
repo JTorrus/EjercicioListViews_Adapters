@@ -2,4 +2,6 @@
 <resources>
     <dimen name="size_of_image_item">50dp</dimen>
     <dimen name="height_of_layout">72dp</dimen>
+    <dimen name="size_of_name">16sp</dimen>
+    <dimen name="size_of_other_strings">12sp</dimen>
 </resources>
