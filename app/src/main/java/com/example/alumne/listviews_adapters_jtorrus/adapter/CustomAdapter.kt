@@ -1,28 +1,39 @@
 package com.example.alumne.listviews_adapters_jtorrus.adapter
 
+import android.app.Activity
+import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import com.example.alumne.listviews_adapters_jtorrus.model.ItemModel
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 /**
  * Created by Alumne on 08/11/2017.
  */
 
-class CustomAdapter: BaseAdapter() {
+class CustomAdapter (private var activity: Activity, private var data: List<ItemModel>, private var item_layout: Int): BaseAdapter() {
+    private var inflater: LayoutInflater = activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        var view = p1
+
+        if (p1 == null) {
+            view = inflater.inflate(item_layout, null)
+        }
     }
 
     override fun getItem(p0: Int): Any {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return data.get(p0)
     }
 
     override fun getItemId(p0: Int): Long {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return p0.toLong()
     }
 
     override fun getCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return data.size
     }
 
 }
