@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">ListViews_Adapters_JTorrus</string>
+    <string-array name="names_of_items">
+        <item>Samsung Galaxy S8</item>
+        <item>iPhone X</item>
+        <item>Razer Phone</item>
+        <item>Google Pixel 2</item>
+        <item>Huawei Mate 10</item>
+        <item>Xiaomi Mi6</item>
+        <item>Meizu Pro 7</item>
+    </string-array>
+    
+    <integer-array name="stocks_of_items">
+        <item>100</item>
+        <item>75</item>
+        <item>50</item>
+        <item>100</item>
+        <item>100</item>
+        <item>70</item>
+        <item>90</item>
+    </integer-array>
+    
+    <string name="title_of_spinner">Select quantity</string>
 </resources>
