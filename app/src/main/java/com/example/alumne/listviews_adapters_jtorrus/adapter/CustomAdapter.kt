@@ -6,10 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.ImageView
-import com.example.alumne.listviews_adapters_jtorrus.R.id.image_of_item
 import com.example.alumne.listviews_adapters_jtorrus.model.ItemModel
-import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.list_item.view.*
 
 /**
  * Created by Alumne on 08/11/2017.
