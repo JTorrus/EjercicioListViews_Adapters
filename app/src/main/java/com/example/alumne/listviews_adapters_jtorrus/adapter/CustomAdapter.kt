@@ -9,11 +9,7 @@ import android.widget.BaseAdapter
 import com.example.alumne.listviews_adapters_jtorrus.model.ItemModel
 import kotlinx.android.synthetic.main.list_item.view.*
 
-/**
- * Created by Alumne on 08/11/2017.
- */
-
-class CustomAdapter (activity: Activity, val data: List<ItemModel>, private val item_layout: Int): BaseAdapter() {
+class CustomAdapter (activity: Activity, val data: List<ItemModel>, val item_layout: Int): BaseAdapter() {
     private var inflater: LayoutInflater = activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
@@ -23,9 +19,9 @@ class CustomAdapter (activity: Activity, val data: List<ItemModel>, private val 
             view = inflater.inflate(item_layout, null)
         }
 
-        p1?.image_of_item?.setImageResource(data[p0].image)
-        p1?.name_of_item?.text = data[p0].name
-        p1?.stock_of_item?.text = data[p0].stock.toString()
+        view?.image_of_item?.setImageResource(data[p0].image)
+        view?.name_of_item?.text = data[p0].name
+        view?.stock_of_item?.text = data[p0].stock.toString()
 
         return p1!!
     }
