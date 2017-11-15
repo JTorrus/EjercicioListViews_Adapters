@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.list_item.view.*
 class CustomAdapter (activity: Activity, val data: List<ItemModel>, val item_layout: Int): BaseAdapter() {
     private var inflater: LayoutInflater = activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
+    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View? {
         var view = p1
 
         if (p1 == null) {
@@ -23,7 +23,7 @@ class CustomAdapter (activity: Activity, val data: List<ItemModel>, val item_lay
         view?.name_of_item?.text = data[p0].name
         view?.stock_of_item?.text = data[p0].stock.toString()
 
-        return p1!!
+        return view
     }
 
     override fun getItem(p0: Int): Any {
