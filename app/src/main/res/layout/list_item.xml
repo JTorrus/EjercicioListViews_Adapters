@@ -2,8 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/height_of_layout"
-    android:orientation="vertical">
+    android:layout_height="@dimen/height_of_layout">
 
     <ImageView
         android:id="@+id/image_of_item"
@@ -30,6 +29,7 @@
         android:layout_height="wrap_content"
         android:prompt="@string/title_of_spinner"
         android:spinnerMode="dialog"
-        android:layout_toEndOf="@id/stock_of_item"/>
+        android:layout_below="@id/name_of_item"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>
