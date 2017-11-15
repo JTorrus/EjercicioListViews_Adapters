@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(){
 
         var item: ItemModel
 
-        for (i in 0..namesOfItems.size) {
+        for (i in 0..namesOfItems.size-1) {
             item = ItemModel(namesOfItems[i], stocksOfItems[i], this.resources.getIdentifier("ic_stay_current_portrait", "drawable", this.packageName))
             data.add(item)
         }
