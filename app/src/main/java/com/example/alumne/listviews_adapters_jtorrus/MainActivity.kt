@@ -1,12 +1,20 @@
 package com.example.alumne.listviews_adapters_jtorrus
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.Toast
 import com.example.alumne.listviews_adapters_jtorrus.adapter.CustomAdapter
 import com.example.alumne.listviews_adapters_jtorrus.model.ItemModel
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
+    override fun onItemClick(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+        Toast.makeText(this, "${p2}", Toast.LENGTH_LONG).show()
+    }
+
     private lateinit var data: ArrayList<ItemModel>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +23,9 @@ class MainActivity : AppCompatActivity(){
 
         createDataModel()
 
-        listView.adapter = CustomAdapter(this, data, R.layout.list_item)
+        listView.adapter = CustomAdapter(this, data)
+
+        listView.onItemClickListener = this
     }
 
     fun createDataModel() {
@@ -26,8 +36,8 @@ class MainActivity : AppCompatActivity(){
 
         var item: ItemModel
 
-        for (i in 0..namesOfItems.size-1) {
-            item = ItemModel(namesOfItems[i], stocksOfItems[i], this.resources.getIdentifier("ic_stay_current_portrait", "drawable", this.packageName))
+        for (i in 0 until namesOfItems.size) {
+            item = ItemModel(namesOfItems[i], stocksOfItems[i], this.resources.getIdentifier("smartphone", "drawable", this.packageName))
             data.add(item)
         }
     }
