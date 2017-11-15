@@ -12,26 +12,26 @@ import kotlinx.android.synthetic.main.list_item.view.*
 class CustomAdapter (activity: Activity, val data: List<ItemModel>, val item_layout: Int): BaseAdapter() {
     private var inflater: LayoutInflater = activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View? {
-        var view = p1
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+        var view = convertView
 
-        if (p1 == null) {
+        if (view == null) {
             view = inflater.inflate(item_layout, null)
         }
 
-        view?.image_of_item?.setImageResource(data[p0].image)
-        view?.name_of_item?.text = data[p0].name
-        view?.stock_of_item?.text = data[p0].stock.toString()
+        view?.image_of_item?.setImageResource(data[position].image)
+        view?.name_of_item?.text = data[position].name
+        view?.stock_of_item?.text = data[position].stock.toString()
 
-        return view
+        return view!!
     }
 
-    override fun getItem(p0: Int): Any {
-        return data.get(p0)
+    override fun getItem(position: Int): Any {
+        return data.get(position)
     }
 
-    override fun getItemId(p0: Int): Long {
-        return p0.toLong()
+    override fun getItemId(position: Int): Long {
+        return position.toLong()
     }
 
     override fun getCount(): Int {
