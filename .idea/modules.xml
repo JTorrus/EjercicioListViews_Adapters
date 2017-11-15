@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://C:\Users\Usuari1\AndroidStudioProjects\ListViews_Adapters_JTorrus\EjercicioListViews_Adapters.iml" filepath="C:\Users\Usuari1\AndroidStudioProjects\ListViews_Adapters_JTorrus\EjercicioListViews_Adapters.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ListViews_Adapters_JTorrus.iml" filepath="$PROJECT_DIR$/ListViews_Adapters_JTorrus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio_ListView_Adapter_JTorrus.iml" filepath="$PROJECT_DIR$/Ejercicio_ListView_Adapter_JTorrus.iml" />
       <module fileurl="file://C:\Users\javyc\Documents\EjercicioListViews_Adapters\ListViews_Adapters_JTorrus.iml" filepath="C:\Users\javyc\Documents\EjercicioListViews_Adapters\ListViews_Adapters_JTorrus.iml" />
+      <module fileurl="file://C:\Users\Usuari1\AndroidStudioProjects\Ejercicio_ListView_Adapter_JTorrus\ListViews_Adapters_JTorrus.iml" filepath="C:\Users\Usuari1\AndroidStudioProjects\Ejercicio_ListView_Adapter_JTorrus\ListViews_Adapters_JTorrus.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Usuari1\AndroidStudioProjects\Ejercicio_ListView_Adapter_JTorrus\app\app.iml" filepath="C:\Users\Usuari1\AndroidStudioProjects\Ejercicio_ListView_Adapter_JTorrus\app\app.iml" />
     </modules>
   </component>
 </project>

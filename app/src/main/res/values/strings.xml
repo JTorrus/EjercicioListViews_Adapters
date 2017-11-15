@@ -8,6 +8,12 @@
         <item>Huawei Mate 10</item>
         <item>Xiaomi Mi6</item>
         <item>Meizu Pro 7</item>
+        <item>Xiamoi M2</item>
+        <item>iPhone 8</item>
+        <item>Samsung Galaxy S7 edge</item>
+        <item>BQ Aquarius</item>
+        <item>Huawei P10</item>
+        <item>iPhone 7S</item>
     </string-array>
     
     <integer-array name="stocks_of_items">
@@ -17,6 +23,12 @@
         <item>100</item>
         <item>100</item>
         <item>70</item>
+        <item>90</item>
+        <item>50</item>
+        <item>90</item>
+        <item>60</item>
+        <item>75</item>
+        <item>125</item>
         <item>90</item>
     </integer-array>
     
