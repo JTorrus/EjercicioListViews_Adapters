@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.alumne.listviews_adapters_jtorrus.MainActivity">
 
+    <!-- He utilizado una ListView para listar cada uno de los items, ya que en
+    este caso es una app sencilla y no vi necesario usar una RecyclerView, que
+    aunque pueda ser el "sucesor" con más funcionalidades, no me proporciona nada
+    diferente de una ListView y esta última es más sencilla de implementar -->
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
