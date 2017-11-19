@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        createDataModel()
+        objectStructure()
 
         listView.adapter = SmartphoneAdapter(this, data)
         listView.onItemClickListener = this
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
         button_to_cancel.visibility = GONE
     }
 
-    private fun createDataModel() {
+    private fun objectStructure() {
         data = ArrayList<Smartphone>()
 
         val namesOfItems: Array<String> = this.resources.getStringArray(R.array.names_of_items)
