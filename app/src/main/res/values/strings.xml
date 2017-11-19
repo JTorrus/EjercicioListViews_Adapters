@@ -19,7 +19,7 @@
         <item>Huawei P10</item>
         <item>iPhone 7S</item>
     </string-array>
-    
+
     <integer-array name="stocks_of_items">
         <item>100</item>
         <item>75</item>

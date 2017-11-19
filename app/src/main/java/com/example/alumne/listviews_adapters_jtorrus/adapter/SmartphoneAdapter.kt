@@ -11,8 +11,13 @@ import com.example.alumne.listviews_adapters_jtorrus.R
 import com.example.alumne.listviews_adapters_jtorrus.model.Smartphone
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class SmartphoneAdapter(private var context: Context, private var data: ArrayList<Smartphone>): BaseAdapter() {
+class SmartphoneAdapter(internal var context: Context, internal var data: ArrayList<Smartphone>): BaseAdapter() {
     private var inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    internal var quantity: Int = 0
+
+    constructor(context: Context, data: ArrayList<Smartphone>, quantity: Int): this(context, data) {
+        this.quantity = quantity
+    }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var view = convertView
