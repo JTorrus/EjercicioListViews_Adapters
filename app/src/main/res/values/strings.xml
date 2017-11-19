@@ -3,6 +3,8 @@
     <string name="title_of_spinner">Select quantity</string>
     <string name="name_of_images">smartphone</string>
     <string name="name_type_of_images">drawable</string>
+    <string name="activity_messageOK">Purchase successful</string>
+    <string name="activity_messageKO">Purchase cancelled</string>
 
     <string-array name="names_of_items">
         <item>Samsung Galaxy S8</item>
