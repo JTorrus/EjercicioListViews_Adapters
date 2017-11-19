@@ -5,4 +5,5 @@
     <dimen name="size_of_name">16sp</dimen>
     <dimen name="size_of_other_strings">12sp</dimen>
     <dimen name="size_of_divider">2dp</dimen>
+    <dimen name="margin_confirm_button">30dp</dimen>
 </resources>

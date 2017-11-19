@@ -13,4 +13,21 @@
         android:id="@+id/listView"
         android:dividerHeight="@dimen/size_of_divider"/>
 
+    <Button
+        android:id="@+id/button_to_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_confirm_button"/>
+
+    <Button
+        android:id="@+id/button_to_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_confirm_button"/>
+
 </RelativeLayout>
