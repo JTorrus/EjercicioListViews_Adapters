@@ -5,6 +5,8 @@
     <string name="name_type_of_images">drawable</string>
     <string name="activity_messageOK">Purchase successful</string>
     <string name="activity_messageKO">Purchase cancelled</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="cancel">CANCEL</string>
 
     <string-array name="names_of_items">
         <item>Samsung Galaxy S8</item>
@@ -21,20 +23,4 @@
         <item>Huawei P10</item>
         <item>iPhone 7S</item>
     </string-array>
-
-    <integer-array name="stocks_of_items">
-        <item>100</item>
-        <item>75</item>
-        <item>50</item>
-        <item>100</item>
-        <item>100</item>
-        <item>70</item>
-        <item>90</item>
-        <item>50</item>
-        <item>90</item>
-        <item>60</item>
-        <item>75</item>
-        <item>125</item>
-        <item>90</item>
-    </integer-array>
 </resources>
