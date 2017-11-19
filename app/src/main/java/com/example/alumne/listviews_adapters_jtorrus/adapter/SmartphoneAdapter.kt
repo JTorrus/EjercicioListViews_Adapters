@@ -37,6 +37,10 @@ class SmartphoneAdapter(internal var context: Context, internal var data: ArrayL
 
         view?.qty_to_buy?.adapter = adapter
 
+        if (quantity != 0) {
+            view?.qty_to_buy?.setSelection(quantity)
+        }
+
         return view!!
     }
 
