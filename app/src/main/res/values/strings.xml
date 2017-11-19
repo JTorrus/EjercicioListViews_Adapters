@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">ListViews_Adapters_JTorrus</string>
+    <string name="title_of_spinner">Select quantity</string>
+    <string name="name_of_images">smartphone</string>
+    <string name="name_type_of_images">drawable</string>
+
     <string-array name="names_of_items">
         <item>Samsung Galaxy S8</item>
         <item>iPhone X</item>
@@ -31,6 +35,4 @@
         <item>125</item>
         <item>90</item>
     </integer-array>
-    
-    <string name="title_of_spinner">Select quantity</string>
 </resources>
