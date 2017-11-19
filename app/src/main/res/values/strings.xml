@@ -5,8 +5,8 @@
     <string name="name_type_of_images">drawable</string>
     <string name="activity_messageOK">Purchase successful</string>
     <string name="activity_messageKO">Purchase cancelled</string>
-    <string name="confirm">CONFIRM</string>
-    <string name="cancel">CANCEL</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
 
     <string-array name="names_of_items">
         <item>Samsung Galaxy S8</item>
